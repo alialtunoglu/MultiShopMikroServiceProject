@@ -225,3 +225,5 @@
 /Volumes/KINGSTON/MultiShopMikroServiceProject/Services/Catalog/MultiShop.Catalog/obj/Debug/net6.0/MultiShop.Catalog.pdb
 /Volumes/KINGSTON/MultiShopMikroServiceProject/Services/Catalog/MultiShop.Catalog/obj/Debug/net6.0/MultiShop.Catalog.genruntimeconfig.cache
 /Volumes/KINGSTON/MultiShopMikroServiceProject/Services/Catalog/MultiShop.Catalog/obj/Debug/net6.0/ref/MultiShop.Catalog.dll
+/Volumes/KINGSTON/MultiShopMikroServiceProject/Services/Catalog/MultiShop.Catalog/bin/Debug/net6.0/DotNetEnv.dll
+/Volumes/KINGSTON/MultiShopMikroServiceProject/Services/Catalog/MultiShop.Catalog/bin/Debug/net6.0/Sprache.dll
