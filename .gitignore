@@ -1,0 +1,21 @@
+# Hassas dosyalar
+.env
+appsettings.json
+appsettings.Development.json
+
+# .NET derleme dosyaları
+bin/
+obj/
+*.pdb
+*.exe
+*.dll
+
+# Kullanıcı özel dosyaları
+.vscode/
+.idea/
+*.log
+*.swp
+
+# Docker dosyaları (isteğe bağlı)
+.dockerignore
+docker-compose.override.yml
