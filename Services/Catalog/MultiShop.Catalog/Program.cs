@@ -6,10 +6,15 @@ using MultiShop.Catalog.Services.ProductDetailServices;
 using MultiShop.Catalog.Services.ProductImageServices;
 using MultiShop.Catalog.Services.ProductServices;
 using MultiShop.Catalog.Settings;
+using dotenv.net;
+
+DotEnv.Load();
+var envVars = DotEnv.Read();
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Configuration["DatabaseSettings:ConnectionString"] = envVars["DATABASE_CONNECTION_STRING"];
 
 builder.Services.AddScoped<ICategoryService,CategoryService>(); //ICategoryService arayüzü istendiğinde CategoryService sınıfının bir örneğini sağlar.
 builder.Services.AddScoped<IProductService,ProductService>();

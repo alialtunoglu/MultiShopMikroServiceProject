@@ -1,21 +1,52 @@
-# Hassas dosyalar
+# Environment variables
 .env
-appsettings.json
-appsettings.Development.json
+*/**/.env
 
-# .NET derleme dosyaları
-bin/
-obj/
-*.pdb
-*.exe
-*.dll
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Ww][Ii][Nn]32/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
 
-# Kullanıcı özel dosyaları
-.vscode/
+# Visual Studio files
+.vs/
+*.user
+*.userosscache
+*.sln.docstates
+*.userprefs
+
+# Rider
 .idea/
-*.log
-*.swp
 
-# Docker dosyaları (isteğe bağlı)
-.dockerignore
-docker-compose.override.yml
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Temporary files
+*.swp
+*~
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json 
