@@ -10,9 +10,9 @@ namespace MultiShop.Order.Application.Features.CQRS.Handlers.AddressHandlers
 {
     public class CreateAddressCommandHandler
     {
-        private readonly IRepository<Adress> _repository;
+        private readonly IRepository<Address> _repository;
 
-        public CreateAddressCommandHandler(IRepository<Adress> repository)
+        public CreateAddressCommandHandler(IRepository<Address> repository)
         {
             _repository = repository;
         }
@@ -20,7 +20,7 @@ namespace MultiShop.Order.Application.Features.CQRS.Handlers.AddressHandlers
         //Handle CQRS ve Mediator Design patternda kullanılan metot ismidir !! opsiyoneldir ama genelde bu isim kullanılır
         public async Task Handle(CreateAddressCommand createAddressCommand)
         {
-            await _repository.CreateAsync(new Adress{
+            await _repository.CreateAsync(new Address{
                 City = createAddressCommand.City,
                 Detail = createAddressCommand.Detail,
                 District = createAddressCommand.District,

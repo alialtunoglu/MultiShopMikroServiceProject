@@ -10,9 +10,9 @@ namespace MultiShop.Order.Application.Features.CQRS.Handlers.AddressHandlers
 {
     public class UpdateAddressCommandHandler
     {
-        private readonly IRepository<Adress> _repository;
+        private readonly IRepository<Address> _repository;
 
-        public UpdateAddressCommandHandler(IRepository<Adress> repository)
+        public UpdateAddressCommandHandler(IRepository<Address> repository)
         {
             _repository = repository;
         }
