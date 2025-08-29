@@ -18,7 +18,7 @@ namespace MultiShop.Order.Application.Features.CQRS.Handlers.AddressHandlers
         }
         public async Task Handle(UpdateAddressCommand updateAddressCommand)
         {
-            var address = await _repository.GetByIdAsync(updateAddressCommand.AdressId);
+            var address = await _repository.GetByIdAsync(updateAddressCommand.AddressId);
             address.City = updateAddressCommand.City;
             address.Detail = updateAddressCommand.Detail;
             address.District = updateAddressCommand.District;

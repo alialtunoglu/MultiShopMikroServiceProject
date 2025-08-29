@@ -7,7 +7,7 @@ namespace MultiShop.Order.Application.Features.CQRS.Results.AddressResults
 {
     public class GetAddressByIdQueryResult
     {
-        public int AdressId { get; set; }
+        public int AddressId { get; set; }
         public string UserId { get; set; }
         public string District { get; set; }
         public string City { get; set; }

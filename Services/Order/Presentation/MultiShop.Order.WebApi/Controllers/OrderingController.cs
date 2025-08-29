@@ -23,10 +23,17 @@ namespace MultiShop.Order.WebApi.Controllers
             return Ok(values);
         }
         [HttpGet("{id}")]
+<<<<<<< HEAD
         public async Task<IActionResult> OrderingById(int id)
         {
             var values = await _mediator.Send(new GetOrderingByIdQuery(id));
             return Ok(values);
+=======
+        public async Task<IActionResult> GetOrderById(int id)
+        {
+            var value = await _mediator.Send(new GetOrderingByIdQuery(id));
+            return Ok(value);
+>>>>>>> fb8b6cec80a23fbef5fae153b05d1a16f26f16ca
         }
         [HttpPost]
         public async Task<IActionResult> CreateOrdering(CreateOrderingCommand command)
@@ -34,18 +41,30 @@ namespace MultiShop.Order.WebApi.Controllers
             await _mediator.Send(command);
             return Ok("Sipariş başarıyla eklendi");
         }
+<<<<<<< HEAD
+=======
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> RemoveOrdering(int id)
+        {
+            await _mediator.Send(new RemoveOrderingCommand(id));
+            return Ok("Sipariş başarıyla silindi");
+        }
+>>>>>>> fb8b6cec80a23fbef5fae153b05d1a16f26f16ca
         [HttpPut]
         public async Task<IActionResult> UpdateOrdering(UpdateOrderingCommand command)
         {
             await _mediator.Send(command);
             return Ok("Sipariş başarıyla güncellendi");
         }
+<<<<<<< HEAD
         [HttpDelete()]
         public async Task<IActionResult> DeleteOrdering(int id)
         {
             await _mediator.Send(new RemoveOrderingCommand(id));
             return Ok("Sipariş başarıyla silindi");
         }
+=======
+>>>>>>> fb8b6cec80a23fbef5fae153b05d1a16f26f16ca
 
     }
 }

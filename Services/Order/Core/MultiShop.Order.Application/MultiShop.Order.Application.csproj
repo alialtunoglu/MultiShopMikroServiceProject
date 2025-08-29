@@ -13,7 +13,11 @@
   <ItemGroup>
     <PackageReference Include="MediatR" Version="12.2.0" />
     <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.1.0" />
+<<<<<<< HEAD
     <PackageReference Include="Microsoft.Extensions.Configuration" Version="9.0.8" />
+=======
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="9.0.8" />
+>>>>>>> fb8b6cec80a23fbef5fae153b05d1a16f26f16ca
   </ItemGroup>
 
 </Project>
