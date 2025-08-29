@@ -22,7 +22,7 @@ namespace MultiShop.Order.Application.Features.CQRS.Handlers.AddressHandlers
             var address = await _repository.GetByIdAsync(getAddressByIdQuery.Id);
             return new GetAddressByIdQueryResult
             {
-                AdressId = address.AdressId,
+                AddressId = address.AddressId,
                 City = address.City,
                 Detail = address.Detail,
                 District = address.District,

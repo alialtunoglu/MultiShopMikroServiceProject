@@ -20,13 +20,11 @@ namespace MultiShop.Order.Application.Features.Mediator.Handlers.OrderingHandler
 
         public async Task Handle(UpdateOrderingCommand request, CancellationToken cancellationToken)
         {
-            await _repository.UpdateAsync(new Ordering
-            {
-                OrderingId = request.OrderingId,
-                UserId = request.UserId,
-                TotalPrice = request.TotalPrice,
-                OrderDate = request.OrderDate
-            });
+            var values = await _repository.GetByIdAsync(request.OrderingId);
+            values.UserId = request.UserId;
+            values.TotalPrice = request.TotalPrice;
+            values.OrderDate = request.OrderDate;
+            await _repository.UpdateAsync(values);
         }
     }
 }
